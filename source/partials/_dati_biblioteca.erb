@@ -1,6 +1,4 @@
-<p class="panel radius">
-    <i class="fa fa-download"></i> <%= link_to 'Scarica la Cartolina in Pdf', "/pdf/#{current_page.data.pdf}", :target => '_blank' %>
-<P>
+<%= partial("partials/_scarica_pdf", :locals => { :current_page => current_page }) %>
 <div class="row">
     <div class="large-12 columns">
         <div class="panel radius">

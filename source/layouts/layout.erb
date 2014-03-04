@@ -52,22 +52,27 @@
             <hr>
 
             <div class="row">
-                <div class="large-4 columns">
-                    Progetto promosso dal Comune di Milano <p/><img alt="Incontri Ravvicinati" src="http://lh4.googleusercontent.com/-bHnKynODTU8/UxX8xPCV86I/AAAAAAAAh9I/bod7Yjl_z1g/h200-no/logo_milano.jpg">
-                </div>
+                <% data.partner.main_sponsor.sponsor.each do |name, sponsor| %>
+                    <div class="large-2 columns">
+                        <%= sponsor.frase %> <%= sponsor.nome %> <p/><img alt="<%= sponsor.nome  %>" src="<%= sponsor.logo  %>">
+                    </div>
+                <% end %>
 
-                <div class="large-4 columns">
-                    Con il Contributo di Fondazione Cariplo<p/> <img alt="Incontri Ravvicinati" src="http://lh6.googleusercontent.com/-BOuerEmRbwU/UxX7pmUu5nI/AAAAAAAAh8s/wkx2TnSMGiM/w300-no/fond-cariplo.jpg">
+                <div class="large-2 columns">
+
+                    <% data.partner.main_partner.partner.each do |name, partner| %>
+                        <%= partner.frase %>:
+                        <br />
+                            <img alt="<%= partner.nome %>" src="<%= partner.logo  %>">
+                        <br />
+                    <% end %>
                 </div>
-                <div class="large-4 columns">
-                    Con il Contributo di: <p/>
-                    <img alt="Incontri Ravvicinati" src="http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w300-no/BCM.jpg">
-                    <p/>
-                    <img alt="Incontri Ravvicinati" src="http://lh3.googleusercontent.com/-EwBKTRIZNIk/UxX7pjJUElI/AAAAAAAAh8k/bAzb73F2BKI/w300-no/logo_abicitta.png">
-                </div>
+                <div class="large-6 columns">
+                    <%= partial("partials/_social") %>
+                </div><!-- End Content -->
             </div>
         </div>
-</footer>
+    </footer>
 
     <%= javascript_include_tag  "all" %>
   </body>
