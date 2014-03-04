@@ -1,6 +1,10 @@
 @import "settings";
 @import "foundation.scss";
 
+.menu {
+  margin-top: rem-calc(4px);
+  margin-bottom: rem-calc(4px);
+}
 
 header {
   @include grid-row;
