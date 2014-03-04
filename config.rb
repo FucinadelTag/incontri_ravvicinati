@@ -5,7 +5,7 @@
 compass_config do |config|
   # Require any additional compass plugins here.
   config.add_import_path "bower_components/foundation/scss"
-  
+
   # Set this to the root of your project when deployed:
   config.http_path = "/"
   config.css_dir = "stylesheets"
@@ -87,6 +87,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 activate :livereload
+
+page "percorsi/*", :layout => :page
 
 # Build-specific configuration
 configure :build do

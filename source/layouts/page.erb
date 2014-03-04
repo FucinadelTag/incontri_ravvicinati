@@ -1,0 +1,26 @@
+<% wrap_layout :layout do %>
+
+    <%= partial("partials/_banner", :locals => { :imageTitle => current_page.data.title, :imageSrc => current_page.data.immagine }) %>
+
+    <div class="row">
+        <div class="large-9 columns">
+            <h1 class="subheader"><%= current_page.data.title %></h1>
+
+            <%= yield %>
+
+            <%= partial("partials/_dati_biblioteca", :locals => { :current_page => current_page }) %>
+        </div>
+
+        <div class="large-3 columns">
+        <h3 class="subheader">Elenco Progetti:</h3>
+            <% find_progetti('^percorsi/*').each do |resource| %>
+                <div class="panel radius">
+                    <% link_to "/#{resource.path}" do %>
+                        <img src= <%= resource.data.logo %> />
+                    <% end %>
+                </div>
+            <% end %>
+        </div>
+
+    </div>
+<% end %>

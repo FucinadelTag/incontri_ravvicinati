@@ -41,9 +41,9 @@ title: Incontri ravvicinati - Colmare le distanze in biblioteca si può
   <div class="large-12 columns">
 
     <ul class="small-block-grid-2">
-        <% find_by_path('^percorsi/*').each do |resource| %>
+        <% find_progetti('^percorsi/*').each do |resource| %>
         <li>
-            <% link_to resource.path do %>
+            <% link_to "/#{resource.path}" do %>
                 <img src= <%= resource.data.immagine %> />
             <% end %>
 
