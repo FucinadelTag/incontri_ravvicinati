@@ -89,6 +89,7 @@ set :images_dir, 'images'
 activate :livereload
 
 page "percorsi/*", :layout => :page
+page "servizio/*", :layout => :servizi
 
 # Build-specific configuration
 configure :build do

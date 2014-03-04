@@ -7,8 +7,6 @@
             <h1 class="subheader"><%= current_page.data.title %></h1>
 
             <%= yield %>
-
-            <%= partial("partials/_dati_biblioteca", :locals => { :current_page => current_page }) %>
         </div>
 
         <%= partial("partials/_sidebar") %>

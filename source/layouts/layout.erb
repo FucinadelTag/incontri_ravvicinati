@@ -33,16 +33,11 @@
 
                   <section class="top-bar-section">
                     <ul class="right">
-                      <li>
-                        <a href="#">Il Progetto</a>
-                      </li>
-
-                      <li>
-                        <a href="#">Protagonisti</a>
-                      </li>
-                      <li>
-                        <a href="#">Contatti</a>
-                      </li>
+                      <% find_servizio('^servizio/*').each do |resource| %>
+                        <li>
+                           <%= link_to resource.data.title, "/#{resource.path}", :title =>resource.data.titla%>
+                        </li>
+                      <% end %>
                     </ul>
 
                   </section>
