@@ -91,6 +91,8 @@ activate :livereload
 page "percorsi/*", :layout => :page
 page "servizio/*", :layout => :servizi
 
+helpers FdtMiddlemanTools
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

@@ -4,6 +4,9 @@ source 'http://rubygems.org'
 
 gem "middleman"
 
+# FdtTools
+gem "fdt_middleman_tools", ">= 1.0.0"
+
 # Live-reloading plugin
 gem "middleman-livereload"
 

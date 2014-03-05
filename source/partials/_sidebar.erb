@@ -1,6 +1,6 @@
 <div class="large-3 columns">
     <h3 class="subheader">Elenco Progetti:</h3>
-    <% find_progetti('^percorsi/*').each do |resource| %>
+    <% find_resource_by_path('^percorsi/*').each do |resource| %>
         <div class="panel radius">
             <% link_to "/#{resource.path}" do %>
                 <img src= <%= resource.data.logo %> />
