@@ -2,23 +2,23 @@ main_sponsor:
     titolo_generale: Sponsor
     sponsor:
         comune:
-            logo: http://lh4.googleusercontent.com/-bHnKynODTU8/UxX8xPCV86I/AAAAAAAAh9I/bod7Yjl_z1g/h200-no/logo_milano.jpg
+            logo: http://lh4.googleusercontent.com/-bHnKynODTU8/UxX8xPCV86I/AAAAAAAAh9I/bod7Yjl_z1g/h100-no/logo_milano.jpg
             nome: Comune di Milano
             frase: Progetto promosso da
         cariplo:
-            logo: http://lh6.googleusercontent.com/-BOuerEmRbwU/UxX7pmUu5nI/AAAAAAAAh8s/wkx2TnSMGiM/w300-no/fond-cariplo.jpg
+            logo: http://lh6.googleusercontent.com/-BOuerEmRbwU/UxX7pmUu5nI/AAAAAAAAh8s/wkx2TnSMGiM/w100-no/fond-cariplo.jpg
             nome: Fondazione Cariplo
             frase: Con il Contributo di
 main_partner:
     titolo_generale: Partner del progetto
     partner:
         bcm:
-            logo: http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w300-no/BCM.jpg
+            logo: http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w100-no/BCM.jpg
             nome: BCM
             frase: Coordinamento Generale
             inhome: 1
         abcitta:
-            logo: http://lh3.googleusercontent.com/-EwBKTRIZNIk/UxX7pjJUElI/AAAAAAAAh8k/bAzb73F2BKI/w300-no/logo_abicitta.png
+            logo: http://lh3.googleusercontent.com/-EwBKTRIZNIk/UxX7pjJUElI/AAAAAAAAh8k/bAzb73F2BKI/w100-no/logo_abicitta.png
             nome: ABCittà
             frase: Comunicazione
             link: http://www.abcitta.org/
