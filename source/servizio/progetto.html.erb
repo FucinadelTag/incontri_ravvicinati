@@ -10,3 +10,22 @@ pdf: pieghevole_incontri_ravvicinati.pdf
 <p>Questo è lo slogan che per 18 mesi, a partire da gennaio 2014, guiderà il Sistema Bibliotecario Urbano di Milano nel ruolo di motore propulsore di una fitta rete di azioni, tutte accomunate dall’obiettivo di costruire in biblioteca e attraverso la biblioteca canali di dialogo tra la città e alcune realtà – quella delle comunità migranti e quella della popolazione carceraria – che vivono situazioni di isolamento e disagio. Le biblioteche diventano “luoghi concreti di incontro” e cantieri culturali fatti di spazi condivisi e aperti dove i pregiudizi si convertono in conoscenza e tolleranza e dove albergano l’ascolto, l’aggregazione, la mediazione interculturale. A cimentarsi nell’impresa cinque “squadre” bibliotecarie – la biblioteca Parco Sempione (Zona 1), la biblioteca Oglio (Zona 4), la biblioteca Fra Cristoforo (Zona 5), la biblioteca Gallaratese (Zona 8), infine il Centro Servizi del Sistema Bibliotecario – ognuna delle quali, a partire dalla comunità territoriale di riferimento e avvalendosi dell’apporto prezioso di partners dell’associazionismo no profit, indirizza le proprie sperimentazioni ad una diversa realtà cittadina. Ogni azione punta al raggiungimento di risultati, alcuni concreti e visibili – servizi, eventi, allestimenti, prodotti artistici, letterari, multimediali – altri intangibili, ma altrettanto pregnanti, fatti di emozioni e situazioni: in ogni caso tracce feconde e vitali destinate a sconfinare oltre i limiti temporali e tematici del progetto.</p>
 
 <%= partial("partials/_scarica_pdf", :locals => { :current_page => current_page }) %>
+
+
+
+<div class="row">
+<h2 class="subheader">Partners:</h2>
+  <div class="large-12 columns">
+    <ul class="small-block-grid-1">
+        <% data.partner.main_partner.partner.each do |name, partner| %>
+        <li>
+            <h3><%= partner.nome %></h3>
+            <% link_to "#{partner.link}", :target =>'_blank' do %>
+                <%= partner.link %>
+            <% end %>
+        </li>
+        <% end %>
+    </ul>
+  </div>
+</div>
+

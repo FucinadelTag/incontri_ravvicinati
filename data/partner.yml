@@ -4,7 +4,7 @@ main_sponsor:
         comune:
             logo: http://lh4.googleusercontent.com/-bHnKynODTU8/UxX8xPCV86I/AAAAAAAAh9I/bod7Yjl_z1g/h200-no/logo_milano.jpg
             nome: Comune di Milano
-            frase: Con il patrocinio del
+            frase: Progetto promosso da
         cariplo:
             logo: http://lh6.googleusercontent.com/-BOuerEmRbwU/UxX7pmUu5nI/AAAAAAAAh8s/wkx2TnSMGiM/w300-no/fond-cariplo.jpg
             nome: Fondazione Cariplo
@@ -16,10 +16,51 @@ main_partner:
             logo: http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w300-no/BCM.jpg
             nome: BCM
             frase: Coordinamento Generale
+            inhome: 1
         abcitta:
             logo: http://lh3.googleusercontent.com/-EwBKTRIZNIk/UxX7pjJUElI/AAAAAAAAh8k/bAzb73F2BKI/w300-no/logo_abicitta.png
             nome: ABCittà
             frase: Comunicazione
+            link: http://www.abcitta.org/
+            inhome: 1
+        associazionegruppocarceremariocuminetti:
+            nome: Associazione Gruppo Carcere Mario Cuminetti
+            link: http://www.gruppocuminetti.it/
+            inhome: 0
+        fondazionecaritasambrosiana:
+            nome: Fondazione Caritas Ambrosiana
+            link: http://www.caritasambrosiana.it/
+            inhome: 0
+        fondazionecasadellacarità:
+            nome: Fondazione Casa della carità A. Abriani
+            link: http://www.casadellacarita.org/
+            inhome: 0
+        fondazioneculturalesanfedele:
+            nome: Fondazione Culturale San Fedele
+            link: http://www.centrosanfedele.net/
+            inhome: 0
+        fratellidelluomo:
+            nome: Fratelli dell’Uomo
+            link: http://www.fratellidelluomo.org/
+            inhome: 0
+        istitutocavalieri:
+            nome: Istituto Comprensivo “Cavalieri” di Milano
+            link: http://www.istitutocavalieri.org/
+            inhome: 0
+        sestaoperasanfedele:
+            nome: Sesta Opera San Fedele
+            link: http://www.sestaopera.it/
+            inhome: 0
+        soleterre:
+            nome: Soleterre
+            link: http://www.soleterre.org/
+            inhome: 0
+        teatromadrugada:
+            nome: Teatro La Madrugada
+            link: http://www.teatrolamadrugada.com/
+            inhome: 0
+
+
 
 
 

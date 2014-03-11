@@ -9,10 +9,7 @@ title: Incontri ravvicinati - Colmare le distanze in biblioteca si può
 
 <div class="row">
     <div class="large-12 columns">
-        <h1>In biblioteca e attraverso la biblioteca</h1>
-        <h4 class="subheader">
-            <strong>5 Canali di dialogo</strong> tra la città e realtà che vivono situazioni di isolamento e disagio
-        </h4>
+        <h1>01 І 2014 > 06 І 2015</h1>
     </div>
 
 </div>
@@ -24,12 +21,15 @@ title: Incontri ravvicinati - Colmare le distanze in biblioteca si può
             <div class="large-6 small-6 columns">
               <h3>Incontri ravvicinati</h3>
               <hr>
-              <h4 class="subheader"><i>Colmare le distanze, sfatare i pregiudizi: in biblioteca si può.</i> Le biblioteche diventano “luoghi concreti di incontro” e cantieri culturali</h4>
+              <h4 class="subheader"><i>5 biblioteche del Sistema urbano di Milano</i> diventano luoghi di incontro e cantieri culturali dove.</h4>
             </div>
 
             <div class="large-6 small-6 columns">
-              <p>
-                  A cimentarsi nell’impresa <strong>cinque “squadre” bibliotecarie</strong> ognuna delle quali, a partire dalla comunità territoriale di riferimento e avvalendosi dell’apporto prezioso di partners dell’associazionismo no profit, indirizza le proprie sperimentazioni ad una diversa realtà cittadina. <strong>Ogni azione punta al raggiungimento di risultati</strong>, alcuni concreti e visibili – servizi, eventi, allestimenti, prodotti artistici, letterari, multimediali – altri intangibili, ma altrettanto pregnanti, fatti di emozioni e situazioni: in ogni caso tracce feconde e vitali <strong>destinate a sconfinare oltre i limiti temporali e tematici del progetto</strong>.
+                <p>
+                    I pregiudizi si convertono in conoscenza e tolleranza. Una fitta rete di azioni orientate a costruire in biblioteca e attraverso la biblioteca canali di dialogo tra la città e realtà che vivono situazioni di isolamento e disagio.
+                </p>
+                <p>
+                    Lungo il percorso emozioni, eventi, inedite occasioni  di confronto, destinate a lasciare tracce feconde e vitali oltre i limiti del progetto.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ title: Incontri ravvicinati - Colmare le distanze in biblioteca si può
   <div class="large-12 columns">
 
     <ul class="small-block-grid-2">
-        <% find_resource_by_path('^percorsi/*').each do |resource| %>
+        <% find_resource_by_path('^percorsi/*', 'ordine').each do |resource| %>
         <li>
             <% link_to "/#{resource.path}" do %>
                 <img src= <%= resource.data.immagine %> />
@@ -55,11 +55,7 @@ title: Incontri ravvicinati - Colmare le distanze in biblioteca si può
         <% end %>
 
         <li>
-            <h4><%= lorem.sentence %></h4>
-            <hr>
-            <p>
-              <%= lorem.paragraph %>
-            </p>
+              <div class="fb-like-box" data-href="https://www.facebook.com/pages/Incontri-ravvicinati/530089903777060" data-width="450" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
         </li>
     </ul>
   </div>

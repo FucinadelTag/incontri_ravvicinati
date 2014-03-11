@@ -13,6 +13,14 @@
   </head>
 
   <body class="<%= page_classes %>">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="row menu">
               <div class="large-12 columns">
@@ -61,10 +69,12 @@
                 <div class="large-2 columns">
 
                     <% data.partner.main_partner.partner.each do |name, partner| %>
-                        <%= partner.frase %>:
-                        <br />
-                            <img alt="<%= partner.nome %>" src="<%= partner.logo  %>">
-                        <br />
+                        <% if partner.inhome == 1 %>
+                            <%= partner.frase %>:
+                            <br />
+                                <img alt="<%= partner.nome %>" src="<%= partner.logo  %>">
+                            <br />
+                        <% end %>
                     <% end %>
                 </div>
                 <div class="large-6 columns">
