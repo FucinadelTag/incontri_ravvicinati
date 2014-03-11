@@ -19,7 +19,7 @@ pdf: pieghevole_incontri_ravvicinati.pdf
     <ul class="small-block-grid-1">
         <% data.partner.main_partner.partner.each do |name, partner| %>
         <li>
-            <h3><%= partner.nome %></h3>
+            <h4 class="subheader"><%= partner.nome %></h3>
             <% link_to "#{partner.link}", :target =>'_blank' do %>
                 <%= partner.link %>
             <% end %>
