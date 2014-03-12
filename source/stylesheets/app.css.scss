@@ -6,6 +6,10 @@
   margin-bottom: rem-calc(4px);
 }
 
+.small {
+  font-size: em-calc(13px);;
+}
+
 header {
   @include grid-row;
 
