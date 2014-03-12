@@ -41,7 +41,7 @@
 
                   <section class="top-bar-section">
                     <ul class="right">
-                      <% find_resource_by_path('^servizio/*', 'sort').each do |resource| %>
+                      <% find_resource_by_path('^servizio/*', 'ordine').each do |resource| %>
                         <li>
                            <%= link_to resource.data.title, "/#{resource.path}", :title =>resource.data.titla%>
                         </li>

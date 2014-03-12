@@ -1,6 +1,7 @@
 ---
 title: Contatti
-sort: 300
+ordine: 300
+display_title: 0
 ---
 
 
@@ -9,8 +10,10 @@ sort: 300
 
     <ul class="small-block-grid-1">
         <% find_resource_by_path('^percorsi/*', 'ordine').each do |resource| %>
-        <li class="panel radius">
-            <h3><%= resource.data.biblioteca.upcase %></h3>
+        <li>
+            <h2><%= resource.data.title %>:</h2>
+            <div class="panel radius">
+            <h3 class="subheader"><%= resource.data.biblioteca.upcase %></h3>
                 <hr>
                     <p>
                         <%= resource.data.indirizzo %>
@@ -26,6 +29,7 @@ sort: 300
                         <%= resource.data.orario.note %>
                     </p>
                 <% end %>
+            </div>
         </li>
 
         <% end %>

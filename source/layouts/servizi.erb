@@ -3,7 +3,10 @@
     <div class="row">
     <hr>
         <div class="large-9 columns">
+        <% if current_page.data.display_title == 1 %>
             <h1 class="subheader"><%= current_page.data.title %></h1>
+        <% end %>
+
 
             <%= yield %>
         </div>
