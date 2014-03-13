@@ -2,7 +2,7 @@ main_sponsor:
     titolo_generale: Sponsor
     sponsor:
         comune:
-            logo: http://lh4.googleusercontent.com/-bHnKynODTU8/UxX8xPCV86I/AAAAAAAAh9I/bod7Yjl_z1g/h100-no/logo_milano.jpg
+            logo: http://lh4.googleusercontent.com/-bHnKynODTU8/UxX8xPCV86I/AAAAAAAAh9I/bod7Yjl_z1g/h70-no/logo_milano.jpg
             nome: Comune di Milano
             frase: Progetto promosso da
             link: https://www.comune.milano.it
@@ -15,7 +15,7 @@ main_partner:
     titolo_generale: Partner del progetto
     partner:
         bcm:
-            logo: http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w100-no/BCM.jpg
+            logo: http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w70-no/BCM.jpg
             nome: BCM - Biblioteche Comunali di Milano
             frase: Coordinamento Generale
             inhome: 1
