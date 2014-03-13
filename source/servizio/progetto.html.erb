@@ -12,19 +12,40 @@ pdf: pieghevole_incontri_ravvicinati.pdf
 
 <%= partial("partials/_scarica_pdf", :locals => { :current_page => current_page }) %>
 
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="small-block-grid-1">
+        <% data.partner.main_sponsor.sponsor.each do |name, sponsor| %>
+        <li>
+            <h4 class="subheader"><%= sponsor.frase %> <%= sponsor.nome %></h3>
+            <% link_to "#{sponsor.link}", :target =>'_blank' do %>
+                <%= sponsor.link %>
+            <% end %>
+        </li>
+        <% end %>
+        <li>
+            <h4 class="subheader">Coordinamento generale BCM - Biblioteche Comunali di Milano</h3>
+            <a href='http://www.comune.milano.it/dseserver/webcity/Documenti.nsf/webHomePage?OpenForm&settore=SVIY-5HNG9W_HP' target="_blank">Biblioteche Comunali di Milano</a>
+        </li>
+
+    </ul>
+  </div>
+</div>
 
 
 <div class="row">
-<h2 class="subheader">Partners:</h2>
+<h3>Partners:</h2>
   <div class="large-12 columns">
     <ul class="small-block-grid-1">
         <% data.partner.main_partner.partner.each do |name, partner| %>
+        <% if partner.inlist == 1 %>
         <li>
             <h4 class="subheader"><%= partner.nome %></h3>
             <% link_to "#{partner.link}", :target =>'_blank' do %>
                 <%= partner.link %>
             <% end %>
         </li>
+        <% end %>
         <% end %>
     </ul>
   </div>
