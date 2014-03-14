@@ -16,11 +16,11 @@ main_partner:
     partner:
         bcm:
             logo: http://lh5.googleusercontent.com/-H7ue_xTSsoM/UxX7pNlIv8I/AAAAAAAAh8g/ZQ95w1zvzD8/w70-no/BCM.jpg
-            nome: BCM - Biblioteche Comunali di Milano
+            nome: BCM - Sistema bibliotecario urbano di Milano
             frase: Coordinamento Generale
             inhome: 1
             inlist: 0
-            link: http://www.comune.milano.it/dseserver/webcity/Documenti.nsf/webHomePage?OpenForm&settore=SVIY-5HNG9W_HP
+            link: www.comune.milano.it/biblioteche
         abcitta:
             logo: http://lh3.googleusercontent.com/-EwBKTRIZNIk/UxX7pjJUElI/AAAAAAAAh8k/bAzb73F2BKI/w100-no/logo_abicitta.png
             nome: ABCittà
