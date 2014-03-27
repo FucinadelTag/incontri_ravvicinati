@@ -8,7 +8,21 @@ display_title: 0
 <div class="row">
   <div class="large-12 columns">
 
+    <h1>Contatti:</h1>
+
+    <div class="panel radius">
+        <h3 class="subheader">Per informazioni sul progetto scrivi a:</h3>
+        <hr>
+            <p>
+                <a href="mailto:info@incontri-ravvicinati.it" target="_blank">info@incontri-ravvicinati.it</a>
+            </p>
+    </div>
+
+         Per informazioni sui singoli progetti scrivi a:
+
     <ul class="small-block-grid-1">
+        <li>
+        </li>
         <% find_resource_by_path('^percorsi/*', 'ordine').each do |resource| %>
         <li>
             <h2><%= resource.data.title %>:</h2>
